@@ -10551,7 +10551,12 @@ a.extend.prev {
     align-self: flex-start;
     animation: slide-in .6s .1s backwards;
     position: relative;
-    overflow: hidden
+   overflow: auto;/*滚动条*/
+    z-index: 1;
+}
+  
+.layout > div:first-child:not(.recent-posts)::-webkit-scrollbar {
+    display: none; /* 隐藏滚动条 */
 }
 
 #tag {
